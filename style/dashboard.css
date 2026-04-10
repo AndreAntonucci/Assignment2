@@ -1,0 +1,645 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1F2937;
+    font-family: 'Roboto';
+    display:flex;
+    flex-direction:column;
+    min-height:20%;
+    margin:0;
+}
+
+/*Header*/
+
+.navigation{
+    display:flex;
+    height: 50px;
+    border-bottom:1px solid white;
+    padding-top:30px;
+    padding-left:30px;
+    justify-content:space-between;
+    gap:50%;
+    color:white;
+}
+
+.nav{
+    display:flex;
+    flex:1;
+    justify-content:space-evenly;
+}
+
+.nav a{
+    color:#E5E7EB;
+    text-decoration: none;
+    font-size:18px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#F9FAF8
+}
+
+#profileImage {
+    position:relative;
+    top:-15px;
+    border-radius: 50%;
+    height:50px;
+
+
+}
+
+/*Dashboard panels*/
+
+.dashboard-panels{
+    display:flex;
+    flex-direction:row;
+    gap:5px;
+    justify-content:space-evenly;
+    padding:10px 0 0 0;
+}
+
+/*Dashboard hero*/
+
+#dashboard-hero{
+    position:relative;
+    color:#F9FAF8;
+    font-size:24px;
+    font-weight:300;
+    padding:10px 0 0 30px;
+    text-align:center;
+}
+
+/*Profile Section*/
+
+.profile-panel{
+    position:relative;
+    display:flex;
+    flex:1;
+    flex-direction:column;
+    background-color:rgba(0, 0, 0, 0.500);
+    border:0.1px solid #737373;
+    border-radius:20px;
+    height:100dvh;
+
+}
+
+#edit-icon{
+    position:relative;
+    width:20px;
+    height:20px;
+    align-self:end;
+    padding:20px 20px 0 0;
+}
+
+#edit-icon:hover{
+    cursor:pointer;
+}
+
+.user-info{
+    display:flex;
+    flex-direction:column;
+    align-self:center;
+    gap:10px;
+    text-align:center;
+}
+
+#profile-img{
+    position:relative;
+    width:80px;
+    height:80px;
+    border:0.5px solid #F9FAF8;
+    border-radius:50%;
+    align-self:center;
+}
+
+#profile-username{
+    color:#E5E7EB;
+    font-size:18px;
+    font-weight:normal;
+    padding:0 0 20px 0;
+
+}
+
+/*profile role info section*/
+
+.profile-role-info{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    border-top:0.1px solid #737373;
+    height:90dvh;
+    padding:20px 0 0 0;
+
+}
+
+.role-type{
+    display:flex;
+}
+
+#role-icon{
+    width:45px;
+    height:45px;
+    padding:0 10px 0 10px;
+}
+
+.role-type p{
+    color:#E5E7EB;
+    font-size:18px;
+    font-weight:100;
+    align-self:center;
+    padding:0 0 0 10px;
+}
+
+.course-type{
+    display:flex;
+}
+
+#course-icon{
+    width:30px;
+    height:30px;
+    padding:0 0 0 15px;
+}
+
+.course-type p{
+    color:#E5E7EB;
+    font-size:18px;
+    font-weight:100;
+    align-self:center;
+    padding: 0 0 0 30px;
+}
+
+.institution{
+    display:flex;
+}
+
+#institution-icon{
+    width:40px;
+    height:40px;
+    padding:0 0 0 10px;
+
+}
+
+.institution p{
+    color:#E5E7EB;
+    font-size:18px;
+    font-weight:100;
+    align-self:center;
+    padding:0 0 0 25px;
+}
+
+.profile-contact{
+    position:relative;
+    display:flex;
+    justify-content:space-evenly;
+    top:140px;
+}
+
+#email-icon{
+    width:30px;
+    height:30px;
+}
+
+#github-icon{
+    width:30px;
+    height:30px;
+}
+
+#linkedin-icon{
+    width:30px;
+    height:30px;
+}
+
+.logout-btn{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    border-top:0.1px solid #737373;
+    top:150px;
+}
+
+#logout{
+    position:relative;
+    top:40px;
+    width:140px;
+    height:40px;
+    border-radius:20px;
+    color:white;
+    background-color:rgba(189, 2, 2, 0.57);
+    border:none;
+    align-self:center;
+    
+}
+
+#logout:hover{
+    cursor:pointer;
+    transform:translateY(-5px);
+    transition:0.3s ease;
+    box-shadow: black;
+}
+
+
+/*main section*/
+
+.main-section{
+    display:flex;
+    flex-direction:column;
+    flex:3;
+    height:100dvh;
+    background-color:rgba(0, 0, 0, 0.500);
+    border:0.1px solid #737373;
+    border-radius:20px;
+
+}
+
+.activity{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    top:10px;
+    bottom:10px;
+    height:70px;
+    gap:5px;
+    padding:20px 5px 20px 5px;
+    border-bottom:0.1px solid #737373;
+   
+}
+
+.active-assignments{
+    display:flex;
+    background-color:black;
+    color:#F9FAF8;
+    border:0.1px solid #737373;
+    border-radius:15px;
+    width:200px;
+    gap:10px;
+    flex:1;
+    align-items:center;
+    padding:0 0 0 10px;
+
+}
+
+.active-assignments:hover{
+    cursor:pointer;
+    background-color:rgba(78, 78, 78, 0.2);
+    transform:translateY(-5px);
+    transition:0.2s ease-in;
+}
+
+#current-icon{
+    width:40px;
+    height:40px;
+}
+
+.missed-assignments{
+    display:flex;
+    background-color:black;
+    color:#F9FAF8;
+    border:0.1px solid #737373;
+    width:200px;
+    border-radius:15px;
+    gap:10px;
+    flex:1;
+    align-items:center;
+    padding:0 0 0 10px;
+}
+
+.missed-assignments:hover{
+    cursor:pointer;
+    background-color:rgba(78, 78, 78, 0.2);
+    transform:translateY(-5px);
+    transition:0.2s ease-in;
+}
+
+#overdue-icon{
+    width:40px;
+    height:40px;
+}
+
+.course-content{
+    display:flex;
+    background-color:black;
+    color:#F9FAF8;
+    border:0.1px solid #737373;
+    width:200px;
+    border-radius:15px;
+    gap:15px;
+    flex:1;
+    align-items:center;
+    padding:0 0 0 10px;
+}
+
+
+.course-content:hover{
+    cursor:pointer;
+    background-color:rgba(78, 78, 78, 0.2);
+    transform:translateY(-5px);
+    transition:0.2s ease-in;
+}
+
+#content-icon{
+    width:40px;
+    height:40px;
+}
+
+.recordings{
+    display:flex;
+    background-color:black;
+    color:#F9FAF8;
+    border:0.1px solid #737373;
+    width:200px;
+    border-radius:15px;
+    gap:15px;
+    flex:1;
+    align-items:center;
+    padding:0 0 0 10px;
+}
+
+#records{
+    width:55px;
+    height:55px;
+}
+
+.recordings:hover{
+    cursor:pointer;
+    background-color:rgba(78, 78, 78, 0.2);
+    transform:translateY(-5px);
+    transition:0.2s ease-in;
+}
+
+/*Table for content*/
+
+.show-content{
+    position:relative;
+    display:flex;
+    border-radius:20px;
+    top:20px;
+    justify-content:space-around;
+    height:40dvh;
+    padding:0 10px 0 10px;
+}
+
+#display-hero{
+    color:white;
+    font-size:20px;
+    font-weight:200;
+    align-self:left;
+    padding:20px 0 0 20px;
+    text-align:center;
+}
+
+.order{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    color:#F9FAF8;
+    font-size:20px;
+    font-weight:100;
+    border:0.1px solid #737373;
+    border-bottom:none;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    width:50px;
+    text-align:center;
+}
+
+#order-hero{
+    font-size:20px;
+    font-weight:300;
+    border-bottom:0.1px solid #737373;
+}
+
+.names{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    color:#F9FAF8;
+    font-size:20px;
+    font-weight:100;
+    border:0.1px solid #737373;
+    border-bottom:none;
+    width:400px;
+    text-align:left;
+    flex:2;
+}
+
+.names p{
+    padding:0 0 0 20px;
+}
+
+#names-hero{
+    position:relative;
+    font-size:20px;
+    font-weight:300;
+    border-bottom:0.1px solid #737373;
+
+}
+
+.dates{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    color:#F9FAF8;
+    font-size:20px;
+    font-weight:100;
+    border:0.1px solid #737373;
+    border-bottom:none;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    width:400px;
+    text-align:center;
+    flex:1;
+}
+
+#dates-hero{
+    position:relative;
+    font-size:20px;
+    font-weight:300;
+    border-bottom:0.1px solid #737373;
+}
+
+
+/*right sections*/
+
+.right-sections{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    background-color:rgba(0, 0, 0, 0.500);
+    border:0.1px solid #737373;
+    flex:1;
+    height:100dvh;
+    border-radius:10px;
+}
+
+#right-section-hero{
+    position:relative;
+    font-size:24px;
+    color:#E5E7EB;
+    font-weight:400;
+    text-align:center;
+    top:50px;
+}
+
+#today{
+    position:relative;
+    font-size:20px;
+    color:#F9FAF8;
+    font-weight:100;
+    text-align:left;
+    left:20px;
+    top:65px;
+}
+
+.card{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    border:0.1px solid #737373;
+    border-radius:20px;
+    width:180px;
+    height:180px;
+    top:100px;
+    background-color:#73737371;
+    align-self:center;
+    justify-content:space-evenly;
+    padding:0 10px 0 10px;
+
+}
+
+.card p{
+    color:#F9FAF8;
+    padding:20px 0 0 20px;
+}
+
+#title{
+    font-size:20px;
+    font-weight:500;
+}
+
+#content-type{
+    position:relative;
+    bottom:15px;
+    font-size:20px;
+    font-weight:300;
+}
+
+#time{
+    position:relative;
+    bottom:30px;
+    font-size:16px;
+    font-weight:100;
+}
+
+#add-to-calender{
+    position:relative;
+    bottom:15px;
+    width:120px;
+    height:35px;
+    border:none;
+    border-radius:10px;
+    background-color:rgb(113, 47, 188);
+    color:#E5E7EB;
+    align-self:center;
+    justify-items:center;
+    text-align:center;
+    font-weight:400;
+}
+
+#add-to-calender:hover{
+    cursor:pointer;
+    background-color:rgb(75, 0, 161);
+}
+
+.card:hover{
+    cursor:pointer;
+    background-color:rgba(47, 47, 47, 0.5);
+}
+
+/*Footer*/
+
+footer{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    top:20px;
+    width:100%;
+    background-color:black;
+}
+.footer-info{
+    position:relative;
+    display:flex;
+    width:100%;
+    background-color:#000000;
+    top:20px;
+    color:#E5E7EB;
+    height:300px;
+    justify-content:space-evenly;
+    align-self:center;
+}
+
+/*footer mayerfeld logo*/
+
+#footer-logo{
+    position:relative;
+    width:180px;
+    height:180px;
+    align-self:center;
+    border:0.5px solid #F9FAF8;
+    border-radius:10px;
+}
+
+/*footer navigation*/
+
+.footer-nav{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    color:#F9FAF8;
+    gap:20px;
+
+}
+
+#footer-nav-hero{
+    position:relative;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.footer-nav a{
+    text-decoration:none;
+    color:#E5E7EB;
+    font-size:18px;
+}
+
+.contact{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    color:#E5E7EB;
+    justify-content:center;
+    gap:20px;
+    font-size:18px;
+}
+
+#footer-contact{
+    position:relative;
+    font-size:18px;
+    font-weight:bold;
+}
+
+#info{
+    position:relative;
+    font-size:18px;
+    color:#E5E7EB;
+    justify-self:center;
+    color:white;
+    align-self:center;
+    background-color:#000000;
+    
+}

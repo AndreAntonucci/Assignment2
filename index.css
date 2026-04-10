@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1F2937;
+    font-family: 'Roboto';
+    display:flex;
+    flex-direction:column;
+    min-height:20%;
+    margin:0;
+}
+
+/*Header*/
+
+.navigation{
+    display:flex;
+    height: 50px;
+    border-bottom:1px solid white;
+    padding-top:30px;
+    padding-left:30px;
+    justify-content:space-between;
+    gap:50%;
+    color:white;
+
+}
+
+.nav{
+    display:flex;
+    flex:1;
+    justify-content:space-evenly;
+}
+
+.nav a{
+    color:#E5E7EB;
+    text-decoration: none;
+    font-size:18px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#F9FAF8
+}
+
+#profileImage {
+    position:relative;
+    top:-15px;
+    border-radius: 50%;
+    height:50px;
+
+
+}
+
+/*body*/
+
+.body{
+    display:flex;
+}
+
+/*body left side*/
+
+.left{
+    display:flex;
+    position:relative;
+    top:80px;
+    left:80px;
+    flex-direction:column;
+    height: 80vh;
+    width: 40%;
+    align-content:space-between;
+}
+
+.hero-main{
+    color:#F9FAF8;
+    font-size: 48px;
+    font-weight:900;
+}
+
+.hero-secondary{
+    position:relative;
+    top:30px;
+    color:#F9FAF8;
+    font-size: 18px;
+}
+
+#signUp {
+    position:relative;
+    width:160px;
+    height: 50px;
+    border-radius:15px;
+    border:none;
+    top:90px;
+    color:white;
+    background:#3882F6;
+    font-size:18px;
+    font-weight:400;
+
+}
+
+/*body right side*/
+
+.right{
+    display:flex;
+    position: relative;
+    left:9%;
+    width:50%;
+}
+
+
+#mayerfeldLogo{
+    position:relative;
+    width: 60%;
+    height:60%;
+    right:60%;
+    top:10%;
+}
+
+#student{
+    position:relative;
+    height:90%;
+    top:10px;
+    z-index:999;
+}
+
+/*Section*/
+
+.courses-section{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    top:40px;
+
+}
+
+#course-hero{
+    position:relative;
+    top:30px;
+    color:white;
+    align-self:center;
+}
+
+.courses{
+    position:relative;
+    display:flex;
+    top:60px;
+    justify-content:space-evenly;
+
+}
+
+.frontend{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    background-color:rgba(0, 0, 0, 0.625);
+    width:20%;
+    height:300px;
+    border-radius:30px;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+#frontend-img{
+    position:relative;
+    bottom:30px;
+    width:100px;
+    height:100px;
+}
+
+#frontend-text{
+    position:relative;
+    font-size:18px;
+}
+
+#frontend:hover{
+    cursor:pointer;
+
+}
+
+.dataAnalyst{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    background-color:rgba(0, 0, 0, 0.625);
+    width:20%;
+    height:300px;
+    border-radius:30px;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+#data-img{
+    position:relative;
+    bottom:30px;
+    width:100px;
+    height:100px;
+}
+
+#data-text{
+    position:relative;
+    font-size:18px;
+}
+
+.projectManager{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    background-color:rgba(0, 0, 0, 0.625);
+    width:20%;
+    height:300px;
+    border-radius:30px;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+#project-img{
+    position:relative;
+    bottom:30px;
+    width:110px;
+    height:110px;
+}
+
+#project-text{
+    position:relative;
+    font-size:18px;
+}
+
+/*Comment Section*/
+
+.comments-section{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    top:200px;
+    height:600px;
+    background-color:#E5E7EB;
+    justify-content:space-evenly
+}
+
+.comments{
+    position:relative;
+    width:40%;
+    height:180px;
+    background-color:#000000;
+    border:0.5px solid #F9FAF8;
+    border-radius:15px;
+    align-self:center;
+}
+
+.signup-link{
+    position:relative;
+    width:50%;
+    height:30%;
+    top:5%;
+    background-color:#1F2937;
+    align-content:center;
+    align-self:center;
+    border:0.5px solid #000000;
+    border-top-right-radius:30px;
+    border-bottom-left-radius:30px;
+}
+
+/*Footer*/
+footer{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    top:200px;
+    width:100%;
+    background-color:black;
+}
+.footer-info{
+    position:relative;
+    display:flex;
+    width:100%;
+    background-color:#000000;
+    top:20px;
+    color:#E5E7EB;
+    height:300px;
+    justify-content:space-evenly;
+    align-self:center;
+}
+
+/*footer mayerfeld logo*/
+
+#footer-logo{
+    position:relative;
+    width:180px;
+    height:180px;
+    align-self:center;
+    border:0.5px solid #F9FAF8;
+    border-radius:10px;
+}
+
+/*footer navigation*/
+
+.footer-nav{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    color:#F9FAF8;
+    gap:20px;
+
+}
+
+#footer-nav-hero{
+    position:relative;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.footer-nav a{
+    text-decoration:none;
+    color:#E5E7EB;
+    font-size:18px;
+}
+
+.contact{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    color:#E5E7EB;
+    justify-content:center;
+    gap:20px;
+    font-size:18px;
+}
+
+#footer-contact{
+    position:relative;
+    font-size:18px;
+    font-weight:bold;
+}
+
+#info{
+    position:relative;
+    font-size:18px;
+    color:#E5E7EB;
+    justify-self:center;
+    color:white;
+    align-self:center;
+    background-color:#000000;
+    
+}
+
+
+

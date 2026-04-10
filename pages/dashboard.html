@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../style/dashboard.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="navigation">
+        <div class="logo">MayerPracs</div>
+        <div class="nav">
+          <a href="../index.html" id="home"><p>Home</p></a>
+          <a href="" id="news"><p>News</p></a>
+          <a href="./pages/dashboard.html" id="dashboard"><p>Dashboard</p></a>
+          <a href="" id="aboutUs"><p>About Us</p></a>
+        </div>
+      </div>
+    </header>
+
+    <h1 id="dashboard-hero">Dashboard</h1>
+
+    <div class="dashboard-panels">
+      <div class="profile-panel">
+        <img id="edit-icon" src="../images/edit.png" alt="pen-edit icon" />
+        <div class="user-info">
+          <img
+            id="profile-img"
+            src="../images/profile.jpg"
+            alt="student profile image"
+          />
+          <p id="profile-username">Alex Peterson</p>
+        </div>
+
+        <div class="profile-role-info">
+          <div class="role-type">
+            <img
+              id="role-icon"
+              src="../images/studenthat.png"
+              alt="student hat"
+            />
+            <p>Student</p>
+          </div>
+          <div class="course-type">
+            <img
+              id="course-icon"
+              src="../images/course.png"
+              alt="course icon"
+            />
+            <p>Front-end Development</p>
+          </div>
+          <div class="institution">
+            <img
+              id="institution-icon"
+              src="../images/mayerfeld.jpg"
+              alt="mayerfeld logo"
+            />
+            <p>Mayerfeld Consulting</p>
+          </div>
+
+          <div class="profile-contact">
+            <img id="email-icon" src="../images/email.png" alt="email logo" />
+            <img
+              id="github-icon"
+              src="../images/github.png"
+              alt="github logo"
+            />
+            <img
+              id="linkedin-icon"
+              src="../images/linkedin.png"
+              alt="linkedIn logo"
+            />
+          </div>
+          <div class="logout-btn">
+            <button id="logout">Log out</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-section">
+        <div class="activity">
+          <div class="active-assignments">
+            <img
+              id="current-icon"
+              src="../images/active.png"
+              alt="active assignments icon"
+            />
+            <p>Active Assignments</p>
+          </div>
+          <div class="missed-assignments">
+            <img
+              id="overdue-icon"
+              src="../images/overdue.png"
+              alt="overdue assignments icon"
+            />
+            <p>Overdue Assignments</p>
+          </div>
+          <div class="course-content">
+            <img
+              id="content-icon"
+              src="../images/content.png"
+              alt="course content icon"
+            />
+            <p>Content</p>
+          </div>
+
+          <div class="recordings">
+            <img
+              id="records"
+              src="../images/recordings.png"
+              alt="recordings icon"
+            />
+            <p>Recordings</p>
+          </div>
+        </div>
+        <h1 id="display-hero">Content</h1>
+        <div class="show-content">
+          <div class="order">
+            <div id="order-hero">#</div>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+          </div>
+
+          <div class="names">
+            <div id="names-hero">Name</div>
+            <p>HTML Terminology.pdf</p>
+            <p>HTML Presentation.pdf</p>
+            <p>CSS Terminology.pdf</p>
+            <p>CSS Presentation.pdf</p>
+          </div>
+
+          <div class="dates">
+            <div id="dates-hero">Date</div>
+            <p>Sun, Mar 22, 19:01PM</p>
+            <p>Sun, Mar 22, 19:10PM</p>
+            <p>Sun, Mar 29, 11:24PM</p>
+            <p>Sun, Mar 29, 11:28PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-sections">
+        <p id="right-section-hero">Schedules</p>
+        <p id="today">Today</p>
+        <div class="card">
+          <p id="title">Week 3 Class</p>
+          <p id="content-type">JavaScript</p>
+          <p id="time">10 am, GMT</p>
+          <button id="add-to-calender">Add to Calender</button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <div class="footer-info">
+      <div class="footer-nav">
+        <p id="footer-nav-hero">Navigation</p>
+        <a href="" id="footer-news"><p>News</p></a>
+        <a href="./pages/dashboard.html" id="footer-dashboard"
+          ><p>Dashboard</p></a
+        >
+        <a href="" id="footer-aboutUs"><p>About Us</p></a>
+      </div>
+      <img
+        src="../images/mayerfeld.jpg"
+        alt="mayerfeld logo"
+        id="footer-logo"
+      />
+      <div class="contact">
+        <p id="footer-contact">Contact</p>
+        <p id="phone">+27 69 372 1131</p>
+        <p id="email">mayerpracs@gmail.com</p>
+        <p id="tel">(011) 392 3802</p>
+        <p id="linkedIn"></p>
+      </div>
+    </div>
+    <p id="info">© MayerPracs. - Mayerfeld Consulting Practicum</p>
+  </footer>
+</html>
