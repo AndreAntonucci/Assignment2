@@ -224,22 +224,21 @@ body {
 
 #logout{
     position:relative;
-    top:40px;
+    top:90px;
     width:140px;
     height:40px;
     border-radius:20px;
     color:white;
-    background-color:rgba(189, 2, 2, 0.57);
+    background-color:rgba(239, 0, 0, 0.57);
     border:none;
     align-self:center;
-    
+    transition:0.3s ease;
 }
 
 #logout:hover{
     cursor:pointer;
     transform:translateY(-5px);
-    transition:0.3s ease;
-    box-shadow: black;
+    box-shadow: rgb(241, 158, 158);
 }
 
 
@@ -280,14 +279,14 @@ body {
     flex:1;
     align-items:center;
     padding:0 0 0 10px;
-
+    transition:0.2s ease-in;
 }
 
 .active-assignments:hover{
     cursor:pointer;
     background-color:rgba(78, 78, 78, 0.2);
     transform:translateY(-5px);
-    transition:0.2s ease-in;
+    
 }
 
 #current-icon{
@@ -306,13 +305,14 @@ body {
     flex:1;
     align-items:center;
     padding:0 0 0 10px;
+    transition:0.2s ease-in;
 }
 
 .missed-assignments:hover{
     cursor:pointer;
     background-color:rgba(78, 78, 78, 0.2);
     transform:translateY(-5px);
-    transition:0.2s ease-in;
+    
 }
 
 #overdue-icon{
@@ -331,6 +331,7 @@ body {
     flex:1;
     align-items:center;
     padding:0 0 0 10px;
+    transition:0.2s ease-in;
 }
 
 
@@ -338,7 +339,6 @@ body {
     cursor:pointer;
     background-color:rgba(78, 78, 78, 0.2);
     transform:translateY(-5px);
-    transition:0.2s ease-in;
 }
 
 #content-icon{
@@ -357,6 +357,7 @@ body {
     flex:1;
     align-items:center;
     padding:0 0 0 10px;
+    transition:0.2s ease-in;
 }
 
 #records{
@@ -368,7 +369,6 @@ body {
     cursor:pointer;
     background-color:rgba(78, 78, 78, 0.2);
     transform:translateY(-5px);
-    transition:0.2s ease-in;
 }
 
 /*Table for content*/
@@ -508,6 +508,7 @@ body {
     align-self:center;
     justify-content:space-evenly;
     padding:0 10px 0 10px;
+    transition:0.2s ease;
 
 }
 
@@ -552,12 +553,12 @@ body {
 
 #add-to-calender:hover{
     cursor:pointer;
-    background-color:rgb(75, 0, 161);
 }
 
 .card:hover{
     cursor:pointer;
     background-color:rgba(47, 47, 47, 0.5);
+    transform:scale3d(1.1, 1.1, 1.1);
 }
 
 /*Footer*/
