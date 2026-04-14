@@ -1,134 +1,135 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Katibeh&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="navigation">
-        <div class="logo">MayerPracs</div>
-        <div class="nav">
-          <a href="#" id="home"><p>Home</p></a>
-          <a href="pages/news.html" id="news"><p>News</p></a>
-          <a href="pages/dashboard.html" id="dashboard"><p>Dashboard</p></a>
-          <a href="pages/about.html" id="aboutUs"><p>About Us</p></a>
-        </div>
-      </div>
-    </header>
 
-    <section class="body">
-      <div class="left">
-        <h1 class="hero-main">
-          Mayerfeld Consulting
-          <p>Practicum Program</p>
-        </h1>
-        <p class="hero-secondary">
-          Welcome to the World's first practicum programme that not only gives
-          you certification but also a bright future with resources that will
-          help you grow within a professional environment.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Katibeh&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="navigation">
+      <div class="logo">MayerPracs</div>
+      <input type="checkbox" id="menu-toggle" />
+
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav">
+        <a href="#" id="home">
+          <p>Home</p>
+        </a>
+        <a href="pages/news.html" id="news">
+          <p>News</p>
+        </a>
+        <a href="pages/dashboard.html" id="dashboard">
+          <p>Dashboard</p>
+        </a>
+        <a href="pages/about.html" id="aboutUs">
+          <p>About Us</p>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="body">
+    <div class="left">
+      <h1 class="hero-main">
+        Mayerfeld Consulting
+        <p>Practicum Program</p>
+      </h1>
+      <p class="hero-secondary">
+        Welcome to the World's first practicum programme that not only gives
+        you certification but also a bright future with resources that will
+        help you grow within a professional environment.
+      </p>
+      <button id="signUp">Sign up</button>
+    </div>
+
+    <section class="right">
+      <img src="./images/student.png" alt="student" id="student" />
+      <img src="./images/mayerfeld.jpg" alt="mayerfeld logo" id="mayerfeldLogo" />
+    </section>
+  </section>
+
+  <section class="courses-section">
+    <h2 id="course-hero">Courses</h2>
+    <div class="courses">
+      <div class="frontend">
+        <img src="./images/frontend.png" alt="front end image" id="frontend-img" />
+        <p id="frontend-text">FrontEnd Development</p>
+      </div>
+      <div class="dataAnalyst">
+        <img src="./images/analyst.png" alt="data analyst image" id="data-img" />
+        <p id="data-text">Data Analyst</p>
+      </div>
+      <div class="projectManager">
+        <img src="./images/management.png" alt="project manager image" id="project-img" />
+        <p id="project-text">Project Manager</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="comments-section">
+    <img src="./images/desktop.png" id="desktop" alt="desktop icon" />
+
+    <section class="middle-comments">
+      <p>Word from our Developer</p>
+      <div class="comments">
+        <p>
+          Time waits for no man, so take your time and join the practicum for
+          a brighter future !
         </p>
-        <button id="signUp">Sign up</button>
+        <p id="commenter-id">Gift Mkhoma</p>
       </div>
 
-      <section class="right">
-        <img src="./images/student.png" alt="student" id="student" />
-        <img
-          src="./images/mayerfeld.jpg"
-          alt="mayerfeld logo"
-          id="mayerfeldLogo"
-        />
-      </section>
-    </section>
-
-    <section class="courses-section">
-      <h2 id="course-hero">Courses</h2>
-      <div class="courses">
-        <div class="frontend">
-          <img
-            src="./images/frontend.png"
-            alt="front end image"
-            id="frontend-img"
-          />
-          <p id="frontend-text">FrontEnd Development</p>
-        </div>
-        <div class="dataAnalyst">
-          <img
-            src="./images/analyst.png"
-            alt="data analyst image"
-            id="data-img"
-          />
-          <p id="data-text">Data Analyst</p>
-        </div>
-        <div class="projectManager">
-          <img
-            src="./images/management.png"
-            alt="project manager image"
-            id="project-img"
-          />
-          <p id="project-text">Project Manager</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="comments-section">
-      <img src="./images/desktop.png" id="desktop" alt="desktop icon" />
-
-      <section class="middle-comments">
-        <p>Word from our Developer</p>
-        <div class="comments">
+      <div class="signup-link">
+        <h4 id="signup-text">
+          welcome User, sign up for more info! <br />
           <p>
-            Time waits for no man, so take your time and join the practicum for
-            a brighter future !
+            This is where you start your journey, so buckle up and sign up.
           </p>
-          <p id="commenter-id">Gift Mkhoma</p>
-        </div>
+        </h4>
+        <img src="./images/motivation.png" id="motivation" alt="motivation to sign up" />
+        <button id="comments-signup-btn">Sign up</button>
+      </div>
+    </section>
+    <img src="./images/tech-tree.png" id="tech-tree" alt="tech tree icon" />
+  </section>
+</body>
+<footer>
+  <section class="footer-info">
+    <div class="footer-nav">
+      <p id="footer-nav-hero">Navigation</p>
+      <a href="" id="footer-news">
+        <p>News</p>
+      </a>
+      <a href="./pages/dashboard.html" id="footer-dashboard">
+        <p>Dashboard</p>
+      </a>
+      <a href="" id="footer-aboutUs">
+        <p>About Us</p>
+      </a>
+    </div>
+    <img src="./images/mayerfeld.jpg" alt="mayerfeld logo" id="footer-logo" />
+    <div class="contact">
+      <p id="footer-contact">Contact</p>
+      <p id="phone">+27 69 372 1131</p>
+      <p id="email">mayerpracs@gmail.com</p>
+      <p id="tel">(011) 392 3802</p>
+      <p id="linkedIn"></p>
+    </div>
+  </section>
+  <p id="info">© MayerPracs. - Mayerfeld Consulting Practicum</p>
+</footer>
 
-        <div class="signup-link">
-          <h4 id="signup-text">
-            welcome User, sign up for more info! <br />
-            <p>
-              This is where you start your journey, so buckle up and sign up.
-            </p>
-          </h4>
-          <img
-            src="./images/motivation.png"
-            id="motivation"
-            alt="motivation to sign up"
-          />
-          <button id="comments-signup-btn">Sign up</button>
-        </div>
-      </section>
-      <img src="./images/tech-tree.png" id="tech-tree" alt="tech tree icon" />
-    </section>
-  </body>
-  <footer>
-    <section class="footer-info">
-      <div class="footer-nav">
-        <p id="footer-nav-hero">Navigation</p>
-        <a href="" id="footer-news"><p>News</p></a>
-        <a href="./pages/dashboard.html" id="footer-dashboard"
-          ><p>Dashboard</p></a
-        >
-        <a href="" id="footer-aboutUs"><p>About Us</p></a>
-      </div>
-      <img src="./images/mayerfeld.jpg" alt="mayerfeld logo" id="footer-logo" />
-      <div class="contact">
-        <p id="footer-contact">Contact</p>
-        <p id="phone">+27 69 372 1131</p>
-        <p id="email">mayerpracs@gmail.com</p>
-        <p id="tel">(011) 392 3802</p>
-        <p id="linkedIn"></p>
-      </div>
-    </section>
-    <p id="info">© MayerPracs. - Mayerfeld Consulting Practicum</p>
-  </footer>
 </html>
