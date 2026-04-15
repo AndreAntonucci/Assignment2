@@ -1,88 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style/news.css" />
-    <title>News</title>
-  </head>
-  <body>
-     <header>
-      <div class="navigation">
-        <div class="logo">MayerPracs</div>
-        <div class="nav">
-          <a href="../index.html" id="home"><p>Home</p></a>
-          <a href="#" id="news"><p>News</p></a>
-          <a href="dashboard.html" id="dashboard"><p>Dashboard</p></a>
-          <a href="about.html" id="aboutUs"><p>About Us</p></a>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../style/news.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Roboto:wght@100..900&display=swap" rel="stylesheet" />
+
+  <title>News</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navigation">
+      <div class="logo">MayerPracs</div>
+       <input type="checkbox" id="menu-toggle" />
+
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav">
+        <a href="../index.html" id="home">Home</a>
+        <a href="#" id="news">News</a>
+        <a href="dashboard.html" id="dashboard">Dashboard</a>
+        <a href="about.html" id="aboutUs">About Us</a>
       </div>
-    </header>
-    <main>
-      <section class="wrapper">
-        <section class="section">
-            <h2>First article</h2>
-            <article class="section-article">
-            <img src="/images/newsImage.webp" alt="" />
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </p>
-            </article>
-            </article>
-        </section>
-        <section class="article-wrapper">
-          <article class="article">
-            <img src="" alt="">
-            <h3>Second article</h3>
-            <a href="" >How to register</a>
-          </article>
-          <article class="article">
-            <img src="" alt="">
-            <h3>Third article</h3>
-           <a href="" >Our most recently FAQ</a>
-          </article>
-          <article class="article"> 
-            <img src="" alt="">
-            <h3>Fourth article</h3>
-             <a href="" >Still having doubts?</a>
-          </article>
-          <article class="article fifth-article">
-            <img src="" alt="">
-            <h3>Fifth article</h3>
-                <a href="" >What's new?</a>
-          </article>
-        </section>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrapper">
+      <h1>Welcome to MayerPracs: Your Gateway to Practical Experience</h1>
+
+      <section class="section">
+        <article class="section-article">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+               width="600" height="400" alt="Team working" />
+          
+          <p>
+            At MayerPracs, we believe that real-world experience is the key to building a successful career.
+            Our platform bridges the gap between academic knowledge and practical skills through hands-on learning.
+
+            Whether you're a student, a graduate, or changing careers, MayerPracs offers structured programs
+            that simulate real working environments.
+
+            Stay tuned for updates, new features, and success stories from our growing community.
+          </p>
+        </article>
       </section>
-    </main>
-    <footer>
+
+      <section class="article-wrapper">
+        <article class="article">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692"
+               width="600" height="400" alt="Working on laptop" />
+          <h3>How to register</h3>
+          <a href="#">Learn how to create your account</a>
+        </article>
+
+        <article class="article">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692"
+               width="600" height="400" alt="Working on laptop" />
+          <h3>Frequently Asked Questions</h3>
+          <a href="#">Read our latest FAQs</a>
+        </article>
+
+        <article class="article">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+               width="600" height="400" alt="Team discussion" />
+          <h3>Need Help?</h3>
+          <a href="#">Contact our support team</a>
+        </article>
+
+        <article class="article fifth-article">
+          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984"
+               width="600" height="400" alt="Customer support" />
+          <h3>What's New on MayerPracs</h3>
+          <a href="#">Discover the latest updates</a>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <footer>
     <div class="footer-info">
+
       <div class="footer-nav">
         <p id="footer-nav-hero">Navigation</p>
-        <a href="#" id="footer-news"><p>News</p></a>
-        <a href="dashboard.html" id="footer-dashboard"
-          ><p>Dashboard</p></a
-        >
-        <a href="about.html" id="footer-aboutUs"><p>About Us</p></a>
+        <a href="#" id="footer-news">News</a>
+        <a href="dashboard.html" id="footer-dashboard">Dashboard</a>
+        <a href="about.html" id="footer-aboutUs">About Us</a>
       </div>
-      <img src="../images/mayerfeld.jpg" alt="mayerfeld logo" id="footer-logo" />
+
+      <img src="../images/mayerfeld.jpg" alt="Mayerfeld logo" id="footer-logo" />
+
       <div class="contact">
         <p id="footer-contact">Contact</p>
-        <p id="phone">+27 69 372 1131</p>
-        <p id="email">mayerpracs@gmail.com</p>
-        <p id="tel">(011) 392 3802</p>
-        <p id="linkedIn"></p>
+        <p>+27 69 372 1131</p>
+        <p>mayerpracs@gmail.com</p>
+        <p>(011) 392 3802</p>
       </div>
+
     </div>
-    <p id="info">© MayerPracs. - Mayerfeld Consulting Practicum</p>
+
+    <p id="info">© MayerPracs - Mayerfeld Consulting Practicum</p>
   </footer>
-  </body>
+</body>
+
 </html>

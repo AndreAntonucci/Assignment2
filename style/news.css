@@ -1,64 +1,53 @@
 * {
-    box-sizing: border-box;
     margin: 0;
-}
-
-/* Nascondi barra di scorrimento per Chrome, Safari e Opera */
-html::-webkit-scrollbar {
-    display: none;
-}
-
-/* Nascondi barra di scorrimento per IE, Edge e Firefox */
-html {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-    height: 100vh;
+    padding: 0;
 }
 
 body {
     background-color: #1F2937;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    min-height: 20%;
+    margin: 0;
 }
 
 /*Header*/
 
-.navigation{
+.navigation {
     display:flex;
+    height: 50px;
     border-bottom:1px solid white;
     padding-top:30px;
     padding-left:30px;
-    padding-bottom: 20px;
     justify-content:space-between;
     gap:50%;
     color:white;
-    margin-right:30px;
-
 }
 
-.nav{
-    display:flex;
-    flex:1;
-    justify-content:space-evenly;
+.nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
 }
 
-.nav a{
-    color:#E5E7EB;
+.nav a {
+    color: #E5E7EB;
     text-decoration: none;
-    font-size:18px;
+    font-size: 18px;
 }
 
-.logo{
-    font-size:24px;
-    font-weight:bold;
-    color:#F9FAF8
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8
 }
 
 #profileImage {
-    position:relative;
-    top:-15px;
+    position: relative;
+    top: -15px;
     border-radius: 50%;
-    height:50px;
+    height: 50px;
 
 
 }
@@ -68,74 +57,91 @@ a {
     color: #F9FAF8;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #F9FAF8;
+#menu-toggle {
+  display: none;
 }
 
-.list {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
 }
 
-.list-item {
-    margin: 0 10px;
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #F9FAF8;
+  border-radius: 5px;
 }
 
-.title {
-    text-align: center;
-    font-size: 48px;
-    color: #F9FAF8;
-    margin-left: 5px;
-}
+ /*Main Section*/
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
     font-size: 18px;
     color: #F9FAF8;
-    margin: 0 400px;
-    max-width: 900px;
-
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
-
+   
 .section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 10px;
     margin: 0 10px;
     padding: 0;
 }
 
 .section-article {
     display: flex;
-    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    background-color: #111827;
+    padding: 20px;
+    border-radius: 12px;
 }
 
 .section h2 {
-    margin-left: 5px;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-.section-article img {
-    width: 400px;
-    height: 400px;
-    margin-left: 5px;
+.article img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: none;
 }
 
 .section-article p {
-    margin: 0 10px;
+     width: 60%;
+    line-height: 1.6;
+    color: #D1D5DB;
+}
+
+.section-article img {
+    width: 40%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.section-article:hover {
+    transform: translateY(-3px);
+    transition: 0.2s ease;
 }
 
 .article-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin-top: 10px;
-    margin-left: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .article-wrapper:first-child {
@@ -147,11 +153,15 @@ a {
 }
 
 .article {
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px;
-    max-width: 200px;
-    height: 200px;
+    background-color: #111827;
+    padding: 10px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .article img {
@@ -160,7 +170,6 @@ a {
     border: 2px solid yellow;
 }
 
-/*Footer*/
 footer{
     position:relative;
     display:flex;
@@ -181,7 +190,6 @@ footer{
     align-self:center;
 }
 
-/*footer mayerfeld logo*/
 
 #footer-logo{
     position:relative;
@@ -192,7 +200,6 @@ footer{
     border-radius:10px;
 }
 
-/*footer navigation*/
 
 .footer-nav{
     position:relative;
@@ -304,4 +311,28 @@ footer{
     .section {
         width: 900px;
     }
+}  
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: #111827;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 15px;
+    z-index: 1000;
+  }
+
+  #menu-toggle:checked ~ .nav {
+    display: flex;
+  }
 }
